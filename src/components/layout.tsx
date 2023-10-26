@@ -5,8 +5,13 @@ export const SharedLayout = () => {
   return (
     <div>
       <Header />
-
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className="container section">
+            <p>Loading...</p>
+          </div>
+        }
+      >
         <Outlet />
       </Suspense>
     </div>

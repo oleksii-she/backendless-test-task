@@ -1,9 +1,10 @@
+import { lazy } from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { SharedLayout } from './components/layout';
-import DummyTable from './pages/dummyTable';
-import DummyChart from './pages/dummyChart';
-import DummyList from './pages/dummyList';
-import ErrorPage from './pages/errorPage';
+const DummyTable = lazy(() => import('./pages/dummyTable'));
+const DummyChart = lazy(() => import('./pages/dummyChart'));
+const DummyList = lazy(() => import('./pages/dummyList'));
+const ErrorPage = lazy(() => import('./pages/errorPage'));
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
           <Route path="/" element={<SharedLayout />}>
             <Route index element={<Navigate to="/dummyChart" />} />
             <Route path="/dummyChart" element={<DummyChart />} />
-            <Route path="/DummyTable" element={<DummyTable />} />
+            <Route path="/dummyTable" element={<DummyTable />} />
             <Route path="/dummyList" element={<DummyList />} />
             <Route path="*" element={<ErrorPage />} />
           </Route>

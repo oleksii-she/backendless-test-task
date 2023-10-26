@@ -35,14 +35,12 @@ body {
   color: orange;
 }
 
-/* Стилі для таблиці */
 .table {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid #ddd;
 }
 
-/* Стилі для заголовка таблиці (thead) */
 .thead {
   background-color: #f2f2f2;
   font-weight: bold;
@@ -53,7 +51,6 @@ body {
   border: 1px solid #ddd;
 }
 
-/* Стилі для рядків таблиці в тілі (tbody) */
 tbody tr:nth-child(even) {
   background-color: #f2f2f2;
 }
@@ -65,11 +62,6 @@ tbody tr:nth-child(odd) {
 tbody td {
   padding: 10px;
   border: 1px solid #ddd;
-}
-
-/* Стилі для виділеного (hover) рядка таблиці */
-tbody tr:hover {
-  background-color: #ddd;
 }
 
 .section {
