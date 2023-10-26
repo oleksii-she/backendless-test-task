@@ -1,4 +1,4 @@
-export type Tablet = {
+export type Table = {
   id: string;
   title: string;
   order: number;

@@ -1,7 +1,7 @@
 import { Navigate } from 'react-router-dom';
-import { Tablet } from '../types/types';
+import { Table } from '../types/types';
 
-const DummyComponent = ({ table }: { table: Tablet }) => {
+const DummyComponent = ({ table }: { table: Table }) => {
   if (!table) {
     return <Navigate to="/*" />;
   }
