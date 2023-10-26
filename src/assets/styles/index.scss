@@ -1,0 +1,77 @@
+@import './utils/reset.scss';
+@import './utils/container';
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 28px;
+  background-color: #ddd;
+  position: relative;
+}
+
+.nav {
+  &__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 22px;
+    align-items: center;
+  }
+  &__list-link {
+    color: #012e40;
+    font-size: 16px;
+    text-decoration: none;
+    &:hover {
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+      color: $secondary-color;
+    }
+  }
+}
+
+.active-link {
+  color: orange;
+}
+
+/* Стилі для таблиці */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+/* Стилі для заголовка таблиці (thead) */
+.thead {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.thead th {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Стилі для рядків таблиці в тілі (tbody) */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+tbody td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+/* Стилі для виділеного (hover) рядка таблиці */
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+.section {
+  padding-top: 28px;
+}
