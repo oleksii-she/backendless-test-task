@@ -22,7 +22,7 @@ This is the "Dummy Table" project created using React and Vite. The project is d
 
 2. To create an optimized build of the project, run:
 
-- npm run build
+* npm run build
   The build will be located in the "build" directory.
 
 3. You can also run lint checks for the code using:
